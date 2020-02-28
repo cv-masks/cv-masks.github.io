@@ -1,4 +1,31 @@
 <html>
+  <head>
+  <meta charset="utf-8" />
+  <title></title>
+  <style type="text/css">
+    /* Common base styles for all devices */
+    .allWidths {font-size:1.5em}
+    body:after { content: 'Size: Mobile below 480px';background:yellow;padding:0.25em}
+
+    @media only screen and (min-width: 480px) {
+      /* Styles for wide mobiles (480px) and above */
+      body:after { content: 'Size: Wide mobile 480px and up'; }
+      .wideMobileOnly {font-size:1.5em;color:pink}
+    }
+
+    @media only screen and (min-width: 768px) { 
+      /* Styles for tablets/netbooks (768px) and up */
+      body:after { content: 'Size: Tablets 768px and up'; }
+      .tabletOnly {font-size:1.5em;color:blue}
+    }
+
+    @media only screen and (min-width: 1024px) { 
+      /* Styles for large screens (desktops 1024px) and above */
+      body:after { content: 'Size: Desktop 1024 and up'; }
+      .desktopOnly {font-size:1.5em;color:green}
+    }
+  </style>
+</head>
 <body>
 
 <p>2008 study: <a href="https://ncbi.nlm.nih.gov/pmc/articles/PMC2440799/">Professional & Home-Made Face Masks Reduce Exposure to Respiratory Infections among the General Population</a> </p>

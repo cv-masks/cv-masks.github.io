@@ -2,35 +2,35 @@
   <head>
   <meta charset="utf-8" />
   <title></title>
-  <style type="text/css">
-    /* Common base styles for all devices */
-    .allWidths {font-size:1.5em}
-    body:after { content: 'Size: Mobile below 480px';background:yellow;padding:0.25em}
+  <style>
+	    html {
+	  font-size: 16px;
+	}
+	@media screen and (min-width: 320px) {
+	  html {
+	    font-size: calc(22px + 6 * ((100vw - 320px) / 680));
+	  }
+	}
+	@media screen and (min-width: 1000px) {
+	  html {
+	    font-size: 28px;
+	  }
+	}
 
-    @media only screen and (min-width: 480px) {
-      /* Styles for wide mobiles (480px) and above */
-      body:after { content: 'Size: Wide mobile 480px and up'; }
-      .wideMobileOnly {font-size:1.5em;color:pink}
-    }
+	body {
+	  max-width: 1000px;
+	  padding: 1rem;
+	  margin: 0 auto;
+	  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+	}
 
-    @media only screen and (min-width: 768px) { 
-      /* Styles for tablets/netbooks (768px) and up */
-      body:after { content: 'Size: Tablets 768px and up'; }
-      .tabletOnly {font-size:1.5em;color:blue}
-    }
-
-    @media only screen and (min-width: 1024px) { 
-      /* Styles for large screens (desktops 1024px) and above */
-      body:after { content: 'Size: Desktop 1024 and up'; }
-      .desktopOnly {font-size:1.5em;color:green}
-    }
-  </style>
+</style>
 </head>
 <body>
 
-<p class="allWidths">2008 study: <a href="https://ncbi.nlm.nih.gov/pmc/articles/PMC2440799/">Professional & Home-Made Face Masks Reduce Exposure to Respiratory Infections among the General Population</a> </p>
+<p>A 2008 study: <a href="https://ncbi.nlm.nih.gov/pmc/articles/PMC2440799/">Professional & Home-Made Face Masks Reduce Exposure to Respiratory Infections among the General Population</a> </p>
 
-<p class="allWidths">And a 2011 study: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3285078/">Facemasks and hand hygiene in the prevention of Influenza transmission at home</a> (randomised trial)</p>
+<p>A 2011 study: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3285078/">Facemasks and hand hygiene in the prevention of Influenza transmission at home</a> (randomised trial)</p>
 
 </body>
 </html>
